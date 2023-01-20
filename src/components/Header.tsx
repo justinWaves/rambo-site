@@ -2,7 +2,7 @@ import React from "react";
 import Party from "public/rambo-party.svg";
 import MenuIcon from "@mui/icons-material/Menu";
 
-function Header() {
+function Header({ ramboHeadActivate }: any) {
   return (
     <div
       className="flex justify-center h-16 fixed
@@ -20,7 +20,11 @@ function Header() {
         <h1 className="text-md md:text-lg  mt-2 text-white">Productions</h1>
       </div>
       <button className="cursor-pointer absolute top-0 right-2 md:right-4  w-10 h-10 ">
-        <img src="rambo-head.png" className=" w-10" />
+        <img
+          src="rambo-head.png"
+          className=" w-10"
+          onClick={() => ramboHeadActivate()}
+        />
       </button>
     </div>
   );
