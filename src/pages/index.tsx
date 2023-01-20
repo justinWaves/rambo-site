@@ -16,14 +16,14 @@ export default function Home() {
       setPartyExplosionActivate(true);
     }, 20);
     playAudio();
-    setRamboHeadIsActivated((ramboHeadIsActivated) => !ramboHeadIsActivated);
+    setRamboHeadIsActivated(!ramboHeadIsActivated);
     setTimeout(() => {
       setPartyExplosionActivate(false);
     }, 3000);
   };
 
   const ramboHeadClickHandlerNoAudio = () => {
-    setRamboHeadIsActivated((ramboHeadIsActivated) => !ramboHeadIsActivated);
+    setRamboHeadIsActivated(!ramboHeadIsActivated);
   };
 
   return (
@@ -62,12 +62,9 @@ export default function Home() {
         />
       </Transition>
 
-      <Transition
-        show={!partyExplosionActivate}
-        leave="transition-opacity duration-2000"
-        leaveFrom="opacity-100"
-        leaveTo="opacity-0"
-      >
+      {ramboHeadIsActivated ? (
+        <></>
+      ) : (
         <div
           className={`bg-black w-screen h-screen absolute z-20 flex justify-center text-center`}
         >
@@ -82,7 +79,7 @@ export default function Home() {
             />
           </div>
         </div>
-      </Transition>
+      )}
 
       <main>
         <Header ramboHeadActivate={ramboHeadClickHandlerNoAudio} />
