@@ -15,21 +15,21 @@ function MailingListComponent() {
   } = useForm<EmailFormInput>();
 
   return (
-    <div className="flex flex-col space-x-2  ">
+    <div className="flex flex-col space-x-2  max-w-sm ">
       <form onSubmit={() => {}}>
         <input
           {...register("name", { required: true })}
           type="text"
-          className="decoration-white h-10 w-full text-xl p-2 rounded-md mb-2"
+          className="decoration-white h-10 w-full text-md p-2 rounded-md mb-2"
           placeholder="Name"
         />
         <input
           {...register("email", { required: true })}
           type="email"
-          className="decoration-white h-10 w-full text-xl p-2 rounded-md"
+          className="decoration-white h-10 w-full text-md p-2 rounded-md"
           placeholder="Email"
         />
-        <button className="text-lg text-slate-900 h-10 w-full bg-sky-300 mt-2 rounded-md">
+        <button className="cursor-pointer text-lg text-slate-900 bg-rambo-red h-10 w-full bg mt-2 rounded-md">
           send
         </button>
       </form>
