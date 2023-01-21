@@ -15,7 +15,7 @@ function MailingListComponent() {
   } = useForm<EmailFormInput>();
 
   return (
-    <div className="flex flex-col space-x-2  max-w-sm ">
+    <div className="flex flex-col space-x-2  max-w-sm z-10 ">
       <form onSubmit={() => {}}>
         <input
           {...register("name", { required: true })}

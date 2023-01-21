@@ -62,7 +62,7 @@ export default function Home() {
       >
         <img
           src="explosion.gif"
-          className="absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto w-full z-19"
+          className="absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto w-full z-20"
         />
       </Transition>
 
@@ -77,7 +77,7 @@ export default function Home() {
       >
         <img
           src="rambo-keytar.png"
-          className="absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto w-full md:w-1/3 z-20 "
+          className="absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto w-full md:w-1/3 z-30 "
         />
       </Transition>
 
