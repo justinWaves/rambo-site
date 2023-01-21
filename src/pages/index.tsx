@@ -9,21 +9,23 @@ import { Transition } from "@headlessui/react";
 export default function Home() {
   const [playAudio] = useSound("party-drop-web.mp3");
   const [ramboHeadIsActivated, setRamboHeadIsActivated] = useState(true);
-  const [partyExplosionActivate, setPartyExplosionActivate] = useState(false);
+  const [isPartyExplosionActivated, setIsPartyExplosionActivated] =
+    useState(false);
+  const [gifSource, setGifSource] = useState("");
 
   const ramboHeadClickHandler = () => {
-    // setTimeout(() => {
-    setPartyExplosionActivate(true);
-    // }, 20);
+    setGifSource("explosion.gif");
+    setRamboHeadIsActivated((ramboHeadIsActivated) => !ramboHeadIsActivated);
+    setIsPartyExplosionActivated(true);
     playAudio();
-    setRamboHeadIsActivated(!ramboHeadIsActivated);
     setTimeout(() => {
-      setPartyExplosionActivate(false);
-    }, 3000);
+      setGifSource("");
+      setIsPartyExplosionActivated(false);
+    }, 2000);
   };
 
   const ramboHeadClickHandlerNoAudio = () => {
-    setRamboHeadIsActivated(!ramboHeadIsActivated);
+    setRamboHeadIsActivated((ramboHeadIsActivated) => !ramboHeadIsActivated);
   };
 
   return (
@@ -40,46 +42,36 @@ export default function Home() {
           className={`bg-black w-screen h-screen absolute z-50 flex justify-center text-center`}
         >
           <div className="my-auto cursor-pointer">
-            <h1 className="text-white text-3xl animate-pulse">
+            <h1 className="text-white text-3xl animate-pulse mb-5">
               click to enter
             </h1>
             <img
               src="rambo-head.png"
-              className="  mx-auto"
+              className="cursor-pointer mx-auto"
               onClick={ramboHeadClickHandler}
             />
           </div>
         </div>
       ) : (
-        <></>
+        <div>
+          <img
+            src={gifSource}
+            className="absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto w-full  z-20 "
+          />
+
+          <Transition
+            show={isPartyExplosionActivated}
+            leave="transition-opacity duration-500"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <img
+              src="rambo-keytar.png"
+              className="absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto w-2/3 z-30 "
+            />
+          </Transition>
+        </div>
       )}
-
-      <Transition
-        show={partyExplosionActivate}
-        leave="transition-opacity duration-500"
-        leaveFrom="opacity-100"
-        leaveTo="opacity-0"
-      >
-        <img
-          src="explosion.gif"
-          className="absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto w-full z-20"
-        />
-      </Transition>
-
-      <Transition
-        show={partyExplosionActivate}
-        enter="transition-opacity duration-500"
-        enterFrom="opacity-0"
-        enterTo="opacity-100"
-        leave="transition-opacity duration-500"
-        leaveFrom="opacity-100"
-        leaveTo="opacity-0"
-      >
-        <img
-          src="rambo-keytar.png"
-          className="absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto w-full md:w-1/3 z-30 "
-        />
-      </Transition>
 
       <main>
         <Header ramboHeadActivate={ramboHeadClickHandlerNoAudio} />
