@@ -1,5 +1,5 @@
 import React from "react";
-import Party from "public/rambo-party.svg";
+import Party from "../../public/rambo-party.svg";
 import MenuIcon from "@mui/icons-material/Menu";
 
 function Header({ ramboHeadActivate }: any) {
@@ -22,7 +22,7 @@ function Header({ ramboHeadActivate }: any) {
       <button className="cursor-pointer absolute top-0 right-2 md:right-4  w-10 h-10 ">
         <img
           src="rambo-head.png"
-          className=" w-10"
+          className=" w-8 md:w-10"
           onClick={() => ramboHeadActivate()}
         />
       </button>
