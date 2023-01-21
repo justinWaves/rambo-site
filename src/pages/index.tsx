@@ -12,9 +12,9 @@ export default function Home() {
   const [partyExplosionActivate, setPartyExplosionActivate] = useState(false);
 
   const ramboHeadClickHandler = () => {
-    setTimeout(() => {
-      setPartyExplosionActivate(true);
-    }, 20);
+    // setTimeout(() => {
+    setPartyExplosionActivate(true);
+    // }, 20);
     playAudio();
     setRamboHeadIsActivated(!ramboHeadIsActivated);
     setTimeout(() => {
@@ -34,6 +34,25 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      {ramboHeadIsActivated ? (
+        <div
+          className={`bg-black w-screen h-screen absolute z-20 flex justify-center text-center`}
+        >
+          <div className="my-auto cursor-pointer">
+            <h1 className="text-white text-3xl animate-pulse">
+              click to enter
+            </h1>
+            <img
+              src="rambo-head.png"
+              className="  mx-auto"
+              onClick={ramboHeadClickHandler}
+            />
+          </div>
+        </div>
+      ) : (
+        <></>
+      )}
 
       <Transition
         show={partyExplosionActivate}
@@ -58,28 +77,9 @@ export default function Home() {
       >
         <img
           src="rambo-keytar.png"
-          className="absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto w-1/3 z-20 "
+          className="absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto w-full md:w-1/3 z-20 "
         />
       </Transition>
-
-      {ramboHeadIsActivated ? (
-        <></>
-      ) : (
-        <div
-          className={`bg-black w-screen h-screen absolute z-20 flex justify-center text-center`}
-        >
-          <div className="my-auto cursor-pointer">
-            <h1 className="text-white text-3xl animate-pulse">
-              click to enter
-            </h1>
-            <img
-              src="rambo-head.png"
-              className="  mx-auto"
-              onClick={ramboHeadClickHandler}
-            />
-          </div>
-        </div>
-      )}
 
       <main>
         <Header ramboHeadActivate={ramboHeadClickHandlerNoAudio} />
