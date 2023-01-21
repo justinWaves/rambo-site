@@ -37,7 +37,7 @@ export default function Home() {
 
       {ramboHeadIsActivated ? (
         <div
-          className={`bg-black w-screen h-screen absolute z-20 flex justify-center text-center`}
+          className={`bg-black w-screen h-screen absolute z-50 flex justify-center text-center`}
         >
           <div className="my-auto cursor-pointer">
             <h1 className="text-white text-3xl animate-pulse">
