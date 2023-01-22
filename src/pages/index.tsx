@@ -28,7 +28,6 @@ export default function Home({ upcomingEvents }: UpcomingEventProps) {
     setRamboHeadIsActivated((ramboHeadIsActivated) => !ramboHeadIsActivated);
     setIsPartyExplosionActivated(true);
     playAudio();
-
     setTimeout(() => {
       setIsPartyExplosionActivated(false);
       setGifSource("");
@@ -50,7 +49,7 @@ export default function Home({ upcomingEvents }: UpcomingEventProps) {
 
       {ramboHeadIsActivated ? (
         <div
-          className={`bg-black w-screen h-screen absolute z-50 flex justify-center text-center`}
+          className={`bg-black w-screen h-screen fixed z-50 flex justify-center text-center`}
         >
           <div className="my-auto cursor-pointer">
             <h1 className="text-white text-3xl animate-pulse mb-5">

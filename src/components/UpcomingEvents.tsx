@@ -4,7 +4,6 @@ import { PortableText } from "@portabletext/react";
 import { urlFor } from "client";
 
 function UpcomingEvents({ upcomingEvents }: UpcomingEventProps) {
-  console.log(upcomingEvents);
   return (
     <div className=" flex flex-col  z-10 w-screen md:p-20 ">
       <h1 className="text-6xl text-black mb-10 text-center font-extrabold underline decoration-rambo-red ">
@@ -24,7 +23,7 @@ function UpcomingEvents({ upcomingEvents }: UpcomingEventProps) {
               <p className="text-white text-md p-5 md:w-3/4 mb-20 ">
                 <PortableText value={event.body} />
               </p>
-              <a href={event.url} target="_blank">
+              <a href={event.url} target="_blank" rel="noreferrer">
                 <img
                   src="baby-keytar.png"
                   className="absolute bottom-12 right-0"
