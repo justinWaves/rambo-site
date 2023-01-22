@@ -7,6 +7,7 @@ import { client, urlFor } from "client";
 import useSound from "use-sound";
 import { Transition } from "@headlessui/react";
 import { UpcomingEventProps } from "typings";
+import Image from "next/image";
 
 export default function Home({ upcomingEvents }: UpcomingEventProps) {
   const [playAudio] = useSound("party-drop-web.mp3");
@@ -55,8 +56,9 @@ export default function Home({ upcomingEvents }: UpcomingEventProps) {
             <h1 className="text-white text-3xl animate-pulse mb-5">
               click for maXimum party
             </h1>
-            <img
+            <Image
               src="rambo-head.png"
+              alt=""
               className="cursor-pointer mx-auto"
               onClick={ramboHeadClickHandler}
             />
@@ -66,6 +68,7 @@ export default function Home({ upcomingEvents }: UpcomingEventProps) {
         <div>
           <img
             src={gifSource}
+            alt=""
             className="absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto w-full  z-20 "
           />
 
@@ -77,6 +80,7 @@ export default function Home({ upcomingEvents }: UpcomingEventProps) {
           >
             <img
               src="rambo-keytar.png"
+              alt=""
               className="absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto h-full z-30  "
             />
           </Transition>
