@@ -3,11 +3,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Promo from "@/components/Promo";
 import { useState, useEffect } from "react";
+import { client, urlFor } from "client";
 import useSound from "use-sound";
 import { Transition } from "@headlessui/react";
-import client from "client.js";
+import { UpcomingEventProps } from "typings";
 
-export default function Home() {
+export default function Home({ upcomingEvents }: UpcomingEventProps) {
   const [playAudio] = useSound("party-drop-web.mp3");
   const [ramboHeadIsActivated, setRamboHeadIsActivated] = useState(false);
   const [isPartyExplosionActivated, setIsPartyExplosionActivated] =
@@ -85,33 +86,33 @@ export default function Home() {
 
       <main>
         <Header ramboHeadActivate={ramboHeadClickHandlerNoAudio} />
-        <Promo />
+        <Promo upcomingEvents={upcomingEvents} />
         {ramboHeadIsActivated ? <></> : <Footer />}
       </main>
     </>
   );
 }
 
-// export const getServerSideProps = async () => {
-//   const query = `*[_type == "upcomingEvents"]{
-//     _id,
-//     title,
-//     author -> {
-//     name,
-//     image
-//   },
-//       url,
-//       eventDate,
-//   description,
-//   image,
-//   slug
-//   }`;
+export const getServerSideProps = async () => {
+  const query = `*[_type == "upcomingEvents"]{
+    _id,
+    title,
+    author -> {
+    name,
+    image
+  },
+      url,
+      eventDate,
+  image,
+  body,
+  slug
+  }`;
 
-//   const posts = await client.fetch(query);
+  const upcomingEvents = await client.fetch(query);
 
-//   return {
-//     props: {
-//       posts,
-//     },
-//   };
-// };
+  return {
+    props: {
+      upcomingEvents,
+    },
+  };
+};

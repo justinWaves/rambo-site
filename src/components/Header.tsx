@@ -20,13 +20,11 @@ function Header({ ramboHeadActivate }: any) {
           className="cursor-pointer absolute left-2 md:left-4  w-10 h-10 "
           onClick={openMobileMenu}
         >
-          <MenuIcon className="  text-4xl text-white md:hidden" />
+          <MenuIcon className="  text-4xl text-zinc-100 md:hidden" />
         </button>
         <Link href="/" className="cursor-pointer">
           <div className="flex flex-row  justify-center  ">
-            <h1 className="text-md md:text-lg mr-1 mt-2 text-white" text-white>
-              Rambo
-            </h1>
+            <h1 className="text-md md:text-lg mr-1 mt-2 text-white">Rambo</h1>
             <img src="rambo-party.svg" className="w-1/3 " />
             <h1 className="text-md md:text-lg  mt-2 text-white">Productions</h1>
           </div>
