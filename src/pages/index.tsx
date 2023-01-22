@@ -2,25 +2,35 @@ import Head from "next/head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Promo from "@/components/Promo";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import useSound from "use-sound";
 import { Transition } from "@headlessui/react";
+import client from "client.js";
 
 export default function Home() {
   const [playAudio] = useSound("party-drop-web.mp3");
-  const [ramboHeadIsActivated, setRamboHeadIsActivated] = useState(true);
+  const [ramboHeadIsActivated, setRamboHeadIsActivated] = useState(false);
   const [isPartyExplosionActivated, setIsPartyExplosionActivated] =
     useState(false);
   const [gifSource, setGifSource] = useState("");
+
+  useEffect(() => {
+    let popUp_status = localStorage.getItem("popUp_status");
+    if (!popUp_status) {
+      setRamboHeadIsActivated(true);
+      localStorage.setItem("popUp_status", "1");
+    }
+  }, []);
 
   const ramboHeadClickHandler = () => {
     setGifSource("explosion.gif");
     setRamboHeadIsActivated((ramboHeadIsActivated) => !ramboHeadIsActivated);
     setIsPartyExplosionActivated(true);
     playAudio();
+
     setTimeout(() => {
-      setGifSource("");
       setIsPartyExplosionActivated(false);
+      setGifSource("");
     }, 2000);
   };
 
@@ -43,7 +53,7 @@ export default function Home() {
         >
           <div className="my-auto cursor-pointer">
             <h1 className="text-white text-3xl animate-pulse mb-5">
-              click to enter
+              click for maXimum party
             </h1>
             <img
               src="rambo-head.png"
@@ -67,7 +77,7 @@ export default function Home() {
           >
             <img
               src="rambo-keytar.png"
-              className="absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto w-2/3 z-30 "
+              className="absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto h-full z-30  "
             />
           </Transition>
         </div>
@@ -81,3 +91,27 @@ export default function Home() {
     </>
   );
 }
+
+// export const getServerSideProps = async () => {
+//   const query = `*[_type == "upcomingEvents"]{
+//     _id,
+//     title,
+//     author -> {
+//     name,
+//     image
+//   },
+//       url,
+//       eventDate,
+//   description,
+//   image,
+//   slug
+//   }`;
+
+//   const posts = await client.fetch(query);
+
+//   return {
+//     props: {
+//       posts,
+//     },
+//   };
+// };
