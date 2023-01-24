@@ -41,8 +41,8 @@ function about() {
             <p>
               Additionally, our Great bingo revival game - hosted by the Rev.
               rusty reams - infuses funk, comedy, fabulous prizes, and a
-              gameshow style format dripping in gold decor that's been making
-              BINGO dreams come true since 2012.
+              gameshow style format dripping in gold decor that&apos;s been
+              making BINGO dreams come true since 2012.
             </p>
             <br />
             <p>
@@ -106,7 +106,7 @@ function about() {
               </span>
               - World&apos;s premiere Bingo Caller The great bingo revival
             </p>
-            <p>(408) 69-BINGO</p>
+            <p>(408)69-BINGO</p>
             <p>BINGO@thegreatbingorevival.com</p>
             <p>www.thegreatbingorevival.com</p>
 
