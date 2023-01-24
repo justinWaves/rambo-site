@@ -13,7 +13,7 @@ function UpcomingEvents({ upcomingEvents }: UpcomingEventProps) {
         return (
           <div
             key={event._id}
-            className="max-w-7xl w-5/8 mx-auto bg-black bg-filter backdrop-blur-xl bg-opacity-50 mt-10 p-5 rounded-xl "
+            className="max-w-7xl w-5/8 mx-auto bg-black bg-filter backdrop-blur-xl bg-opacity-70 mt-10 p-5 rounded-xl "
           >
             <h1 className="text-white font-bold text-3xl md:text-5xl  mb-3 p-3">
               {event.title}
@@ -26,9 +26,9 @@ function UpcomingEvents({ upcomingEvents }: UpcomingEventProps) {
               <a href={event.url} target="_blank" rel="noreferrer">
                 <img
                   src="baby-keytar.png"
-                  className="absolute bottom-12 right-0"
+                  className="absolute bottom-12 right-0 hidden md:block w-1/4"
                 />
-                <button className="cursor-pointer text-xl font-bold text-slate-100 bg-rambo-red h-10 w-full md:w-1/4  rounded-md absolute bottom-5 right-0 ">
+                <button className="cursor-pointer text-lg p-1 font-bold text-slate-100 bg-rambo-red h-15 w-full md:w-1/4  rounded-md absolute bottom-5 right-0 ">
                   <p className="animate-pulse"> Go To Event Page</p>
                 </button>
               </a>

@@ -29,49 +29,55 @@ function Header({ ramboHeadActivate }: any) {
             <h1 className="text-md md:text-lg  mt-2 text-white">Productions</h1>
           </div>
         </Link>
-        <button className="cursor-pointer absolute top-0 right-2 md:right-4  w-10 h-10 ">
-          <img
-            src="rambo-head.png"
-            className=" w-8 mt-1 md:mt-0 md:w-10 "
-            onClick={() => ramboHeadActivate()}
-          />
-        </button>
+        <Link href="/">
+          <button className="cursor-pointer absolute top-0 right-2 md:right-4  w-10 h-10 ">
+            <img
+              src="rambo-head.png"
+              className=" w-8 mt-1 md:mt-0 md:w-10 "
+              onClick={() => ramboHeadActivate()}
+            />
+          </button>
+        </Link>
       </div>
       {/* Desktop Menu */}
       <div className=" hidden md:flex fixed top-16 w-screen flex-row  max-w-7xl mx-auto left-0 right-0  bg-black bg-filter backdrop-blur-xl bg-opacity-80 z-20 rounded-b-xl p-2">
         <Link
           href="/about"
-          className="text-zinc-100 text-lg  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-500"
+          className="text-zinc-100 text-lg  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>About</h1>
         </Link>
-        <Link
-          href="/events"
-          className="text-zinc-100 text-lg  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-500"
+        <a
+          href="https://www.facebook.com/RamboPartyProductions/events/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-zinc-100 text-lg  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Events</h1>
-        </Link>
+        </a>
         <Link
           href="/services"
-          className="text-zinc-100 text-lg  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-500"
+          className="text-zinc-100 text-lg  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Services</h1>
         </Link>
         <Link
           href="/gallery"
-          className="text-zinc-100 text-lg  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-500"
+          className="text-zinc-100 text-lg  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Gallery</h1>
         </Link>
         <Link
           href="/contact"
-          className="text-zinc-100 text-lg  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-500"
+          className="text-zinc-100 text-lg  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Contact</h1>
         </Link>
         <a
-          href=""
-          className="text-zinc-100 text-lg  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-500"
+          href="https://www.rambopartyproductions.com/shop"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-zinc-100 text-lg  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Shop</h1>
         </a>
@@ -87,24 +93,44 @@ function Header({ ramboHeadActivate }: any) {
         leaveTo="opacity-0"
       >
         <div className="fixed top-16 w-screen flex flex-col md:hidden   bg-black bg-filter backdrop-blur-xl bg-opacity-80 z-20 p-5 rounded-b-lg">
-          <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
-            About
-          </h1>
-          <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
-            Events
-          </h1>
-          <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
-            Services
-          </h1>
-          <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
-            Gallery
-          </h1>
-          <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
-            Contact
-          </h1>
-          <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
-            Shop
-          </h1>
+          <Link href="/about">
+            <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
+              About
+            </h1>
+          </Link>
+          <a
+            href="https://www.facebook.com/RamboPartyProductions/events/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
+              Events
+            </h1>
+          </a>
+          <Link href="/Services">
+            <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
+              Services
+            </h1>
+          </Link>
+          <Link href="/Gallery">
+            <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
+              Gallery
+            </h1>
+          </Link>
+          <Link href="/Contact">
+            <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
+              Contact
+            </h1>
+          </Link>
+          <a
+            href="https://www.rambopartyproductions.com/shop"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
+              Shop
+            </h1>
+          </a>
         </div>
       </Transition>
     </>
