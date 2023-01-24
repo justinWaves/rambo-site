@@ -51,7 +51,7 @@ function about() {
               eye) crossed paths over Jake&apos;s on the Lake in Tahoe City.
               Rusty (aka Red Lion) smashed into Rambo via a comedic lightning
               storm while hard at work serving the finest patrons from the San
-              Francisco Bay Area and beyond.{" "}
+              Francisco Bay Area and beyond.
             </p>
             <br />
             <p>
@@ -93,7 +93,7 @@ function about() {
             <br />
             <p>
               <span className="font-bold text-xl">Ryan Rambo</span>- Founder,
-              DJ, Artist, Party scientist, professional vibe curator{" "}
+              DJ, Artist, Party scientist, professional vibe curator
             </p>
             <p>(530) 205-FUNK </p>
 
@@ -104,7 +104,7 @@ function about() {
               <span className="font-bold text-xl">
                 The Reverend Rusty Reams
               </span>
-              - world&apos;s premiere Bingo Caller The great bingo revival
+              - World&apos;s premiere Bingo Caller The great bingo revival
             </p>
             <p>(408) 69-BINGO</p>
             <p>BINGO@thegreatbingorevival.com</p>
