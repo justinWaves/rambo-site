@@ -4,6 +4,7 @@ import { PortableText } from "@portabletext/react";
 import { urlFor } from "client";
 
 function UpcomingEvents({ upcomingEvents }: UpcomingEventProps) {
+  console.log(upcomingEvents);
   return (
     <div className=" flex flex-col  z-10 w-screen md:p-20 ">
       <h1 className="text-6xl text-black mb-10 text-center font-extrabold underline decoration-rambo-red ">
@@ -15,15 +16,23 @@ function UpcomingEvents({ upcomingEvents }: UpcomingEventProps) {
             key={event._id}
             className="max-w-7xl w-5/8 mx-auto bg-black bg-filter backdrop-blur-xl bg-opacity-70 mt-10 p-5 rounded-xl "
           >
+            <p className="text-xs text-zinc-500 pl-3">
+              Posted on{" "}
+              <span className="text-zinc-300">
+                {new Date(event._createdAt).toLocaleString()}
+              </span>{" "}
+              by <span className="text-zinc-300">{event.author.name}</span>
+            </p>
             <h1 className="text-white font-bold text-3xl md:text-5xl  mb-3 p-3">
               {event.title}
             </h1>
+
             <img src={urlFor(event.image).url()!} alt="" />
             <div className="flex  relative ">
               <span className="text-white text-md p-5 md:w-3/4 mb-20 ">
                 <PortableText value={event.body} />
               </span>
-              <a href={event.url} target="_blank" rel="noreferrer">
+              <a href={event.url} target="_blank" rel="noopener">
                 <img
                   src="baby-keytar.png"
                   className="absolute bottom-12 right-0 hidden md:block w-1/4"

@@ -69,21 +69,18 @@ export default function Home({ upcomingEvents }: UpcomingEventProps) {
           <img
             src={gifSource}
             alt=""
-            className="absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto w-full  z-20 "
+            className={`absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto w-full  z-20 ${
+              isPartyExplosionActivated ? "block" : "hidden"
+            }`}
           />
 
-          <Transition
-            show={isPartyExplosionActivated}
-            leave="transition-opacity duration-500"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            <img
-              src="rambo-keytar.png"
-              alt=""
-              className="absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto h-full z-30  "
-            />
-          </Transition>
+          <img
+            src="rambo-keytar.png"
+            alt=""
+            className={`absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto h-full  z-30 ${
+              isPartyExplosionActivated ? "block" : "hidden"
+            }`}
+          />
         </div>
       )}
 
@@ -99,6 +96,7 @@ export default function Home({ upcomingEvents }: UpcomingEventProps) {
 export const getServerSideProps = async () => {
   const query = `*[_type == "upcomingEvents"]{
     _id,
+    _createdAt,
     title,
     author -> {
     name,
