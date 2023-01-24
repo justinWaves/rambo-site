@@ -32,7 +32,7 @@ function UpcomingEvents({ upcomingEvents }: UpcomingEventProps) {
               <span className="text-white text-md p-5 md:w-3/4 mb-20 ">
                 <PortableText value={event.body} />
               </span>
-              <a href={event.url} target="_blank" rel="noopener">
+              <a href={event.url} target="_blank" rel="noreferrer">
                 <img
                   src="baby-keytar.png"
                   className="absolute bottom-12 right-0 hidden md:block w-1/4"
