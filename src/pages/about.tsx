@@ -32,8 +32,8 @@ function about() {
             </p>
             <br />
             <p>
-              Our goal is to bring LOCAL musicians and DJ's together, along with
-              high quality artists from all over the world, to create an
+              Our goal is to bring LOCAL musicians and DJ&apos;s together, along
+              with high quality artists from all over the world, to create an
               interactive, participatory dance party experience where people can
               lose themselves on the dance floor.
             </p>
@@ -48,9 +48,9 @@ function about() {
             <p>
               Rambo Party Productions was officially born in September of 2012
               when, as legend has it, infrared lasers (undetectable by the human
-              eye) crossed paths over Jake’s on the Lake in Tahoe City. Rusty
-              (aka Red Lion) smashed into Rambo via a comedic lightning storm
-              while hard at work serving the finest patrons from the San
+              eye) crossed paths over Jake&apos;s on the Lake in Tahoe City.
+              Rusty (aka Red Lion) smashed into Rambo via a comedic lightning
+              storm while hard at work serving the finest patrons from the San
               Francisco Bay Area and beyond.{" "}
             </p>
             <br />
@@ -104,7 +104,7 @@ function about() {
               <span className="font-bold text-xl">
                 The Reverend Rusty Reams
               </span>
-              - world's premiere Bingo Caller The great bingo revival
+              - world&apos;s premiere Bingo Caller The great bingo revival
             </p>
             <p>(408) 69-BINGO</p>
             <p>BINGO@thegreatbingorevival.com</p>
