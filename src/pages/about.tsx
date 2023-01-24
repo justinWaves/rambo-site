@@ -1,56 +1,123 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import VideoBackground from "@/components/VideoBackground";
 import React from "react";
 
 function about() {
   return (
-    <div>
+    <div className="relative min-h-screen">
       <Header />
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          elementum, tellus id facilisis dictum, metus orci consectetur ligula,
-          vitae dapibus nibh enim sed elit. Nullam eleifend orci malesuada risus
-          commodo pellentesque. Suspendisse tincidunt nisi quis eros tincidunt,
-          ut ultrices ipsum posuere. Aenean sapien urna, aliquet non finibus
-          non, efficitur eu massa. Sed varius turpis quis vestibulum fermentum.
-          Aliquam egestas lorem eros, rutrum dignissim leo commodo aliquet. Sed
-          id viverra diam. Fusce tristique imperdiet felis, efficitur sodales
-          erat tempus non. Curabitur vehicula tincidunt auctor. Donec non tortor
-          a elit rhoncus consectetur. Quisque congue nibh justo, sit amet
-          efficitur dui imperdiet sed. Nam est nisi, pellentesque sed elit id,
-          hendrerit feugiat nulla. Nunc suscipit sit amet nibh id condimentum.
-          Sed porta turpis ac elit posuere porta. Integer lacus quam, lacinia
-          vehicula elit nec, molestie volutpat eros. Aliquam erat volutpat. Cras
-          nisl turpis, vulputate vel dictum sit amet, sodales id lorem. Donec
-          fermentum est ac facilisis elementum. Praesent felis dolor, dignissim
-          quis leo non, interdum mollis urna. Donec mollis odio urna, vel
-          scelerisque purus vestibulum in. Cras finibus dapibus odio. Proin ac
-          mauris enim. Vestibulum condimentum arcu nulla, eget efficitur neque
-          finibus ac. Quisque lacinia dui at enim blandit sagittis. Nunc lacinia
-          enim ac cursus ultricies. Class aptent taciti sociosqu ad litora
-          torquent per conubia nostra, per inceptos himenaeos. Integer
-          scelerisque euismod ultricies. Duis placerat vel felis sed dapibus.
-          Nulla pretium purus eget libero tristique, et vehicula leo suscipit.
-          Proin iaculis facilisis augue a dapibus. Duis ullamcorper justo at
-          pharetra feugiat. Duis porta velit purus, vitae laoreet nulla
-          porttitor non. Curabitur nibh nibh, vestibulum vel mattis commodo,
-          eleifend in mi. In ante massa, ultrices auctor congue ac, rutrum quis
-          turpis. Nulla in tellus vitae enim tincidunt lacinia. Donec ac
-          accumsan arcu. Nullam quam nibh, tincidunt quis dolor eu, faucibus
-          ornare ante. Morbi semper justo at ornare condimentum. Proin vulputate
-          lacus ac accumsan tincidunt. Nam ultricies tempus finibus. In commodo
-          quis lorem id iaculis. Quisque faucibus dolor elit, in sollicitudin
-          libero aliquam sed. Donec vitae erat dui. Donec porttitor ullamcorper
-          velit in laoreet. Maecenas nec finibus turpis. Curabitur a nisl ex.
-          Cras tincidunt nunc et nisl rhoncus fringilla. Curabitur ac massa nec
-          nunc consectetur rhoncus. Etiam hendrerit libero nulla, a condimentum
-          elit tincidunt id. Sed elit ipsum, sollicitudin et risus eu, convallis
-          consectetur urna. Cras mi elit, fermentum id elit a, gravida
-          sollicitudin est.
-        </p>
+      <div className="pb-60">
+        <div className="relative pt-40 pb-10 max-w-7xl  mx-auto z-10 flex lg:flex-row flex-col ">
+          <div className="lg:w-1/3 lg:rounded-l-xl overflow-hidden flex lg:flex-col flex-row w-screen overflow-x-scroll justify-around">
+            <img src="about-1.webp" alt="" className="w-full" />
+            <img src="about-2.webp" alt="" className="w-full" />
+            <img src="about-3.webp" alt="" className="w-full" />
+            <img src="about-4.webp" alt="" className="w-full" />
+          </div>
+          <div className="bg-black bg-filter backdrop-blur-xl bg-opacity-50 p-5 lg:rounded-r-xl text-white px-10 lg:w-2/3 ">
+            <h1 className="text-5xl text-rambo-red text-center mb-5 ">
+              About Rambo
+              <img src="rambo-party.svg" className=" w-2/3 mx-auto" />
+              Productions
+            </h1>
+            <p>
+              Rambo Party Productions goal is to bring people together in a
+              positive way by means of the DANCE PARTY.
+            </p>
+            <br />
+            <p>
+              We strive to produce weird, funky, and wild parties that bring
+              people together to DANCE and express themselves uniquely.
+            </p>
+            <br />
+            <p>
+              Our goal is to bring LOCAL musicians and DJ's together, along with
+              high quality artists from all over the world, to create an
+              interactive, participatory dance party experience where people can
+              lose themselves on the dance floor.
+            </p>
+            <br />
+            <p>
+              Additionally, our Great bingo revival game - hosted by the Rev.
+              rusty reams - infuses funk, comedy, fabulous prizes, and a
+              gameshow style format dripping in gold decor that's been making
+              BINGO dreams come true since 2012.
+            </p>
+            <br />
+            <p>
+              Rambo Party Productions was officially born in September of 2012
+              when, as legend has it, infrared lasers (undetectable by the human
+              eye) crossed paths over Jake’s on the Lake in Tahoe City. Rusty
+              (aka Red Lion) smashed into Rambo via a comedic lightning storm
+              while hard at work serving the finest patrons from the San
+              Francisco Bay Area and beyond.{" "}
+            </p>
+            <br />
+            <p>
+              It was that time when Tight and Bright on Bikes, an infamous Time
+              Travel bicycle pub crawl of debauchery, set Rambo Party
+              Productions on a party starting bonanza.
+            </p>
+            <br />
+            <p>
+              Party enlightenment soon came to fruition as infrared lazers soon
+              manifested themselves in the visible spectrum by means of the
+              LAZER LABORATORY Halloween party. From this point forward, lazers
+              have been the guiding force in all of the decision making
+              processes by Rambo Party Productions.
+            </p>
+            <br />
+            <p>
+              Through extensive spiritual lazer retreats in the wilderness
+              riding mountain bikes and meditating on lazer forces, cleansing on
+              a diet of only water and lazers for months on end, and speaking
+              with mystical lazer gurus, the Rambo Party Productions team now
+              has finally reached true oneness with the universe by the use of
+              multicolored neon beamz.
+            </p>
+            <br />
+            <p>
+              Step out of the infrared - open your eyes to the lazers that can
+              be seen and felt. Bathe in the neon lazer spa that we call life.
+              PARTY.
+            </p>
+            <br />
+            <p>
+              It is why we, Rambo Party Productions, proudly shout at every
+              show: ONE LOVE - ONE LAZER!
+            </p>
+
+            <br />
+            <h2 className="text-3xl font-bold text-rambo-red">THE TEAM:</h2>
+            <br />
+            <p>
+              <span className="font-bold text-xl">Ryan Rambo</span>- Founder,
+              DJ, Artist, Party scientist, professional vibe curator{" "}
+            </p>
+            <p>(530) 205-FUNK </p>
+
+            <p> rambopartyproductions@gmail.com</p>
+
+            <br />
+            <p>
+              <span className="font-bold text-xl">
+                The Reverend Rusty Reams
+              </span>
+              - world's premiere Bingo Caller The great bingo revival
+            </p>
+            <p>(408) 69-BINGO</p>
+            <p>BINGO@thegreatbingorevival.com</p>
+            <p>www.thegreatbingorevival.com</p>
+
+            <h3 className="text-3xl text-rambo-red text-center mt-10">
+              ONE LOVE - ONE LAZER!
+            </h3>
+          </div>
+        </div>
       </div>
       <Footer />
+      <VideoBackground />
     </div>
   );
 }

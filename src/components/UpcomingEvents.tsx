@@ -20,9 +20,9 @@ function UpcomingEvents({ upcomingEvents }: UpcomingEventProps) {
             </h1>
             <img src={urlFor(event.image).url()!} alt="" />
             <div className="flex  relative ">
-              <p className="text-white text-md p-5 md:w-3/4 mb-20 ">
+              <span className="text-white text-md p-5 md:w-3/4 mb-20 ">
                 <PortableText value={event.body} />
-              </p>
+              </span>
               <a href={event.url} target="_blank" rel="noreferrer">
                 <img
                   src="baby-keytar.png"

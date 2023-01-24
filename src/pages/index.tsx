@@ -56,7 +56,7 @@ export default function Home({ upcomingEvents }: UpcomingEventProps) {
             <h1 className="text-white text-3xl animate-pulse mb-5">
               click for maXimum party
             </h1>
-            <Image
+            <img
               src="rambo-head.png"
               alt=""
               className="cursor-pointer mx-auto"
@@ -87,7 +87,7 @@ export default function Home({ upcomingEvents }: UpcomingEventProps) {
         </div>
       )}
 
-      <main>
+      <main className="min-h-screen relative">
         <Header ramboHeadActivate={ramboHeadClickHandlerNoAudio} />
         <Promo upcomingEvents={upcomingEvents} />
         {ramboHeadIsActivated ? <></> : <Footer />}
