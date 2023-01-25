@@ -77,7 +77,7 @@ export default function Home({ upcomingEvents }: UpcomingEventProps) {
           <img
             src="rambo-keytar.png"
             alt=""
-            className={`absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto h-full  z-30 ${
+            className={`absolute mx-auto left-0 right-0 top-0 bottom-0 my-auto md:h-full w-auto  z-30 ${
               isPartyExplosionActivated ? "block" : "hidden"
             }`}
           />
