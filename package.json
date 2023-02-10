@@ -31,6 +31,7 @@
     "use-sound": "^4.0.1"
   },
   "devDependencies": {
+    "@iconify/react": "^4.1.0",
     "@svgr/webpack": "^6.5.1",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",

@@ -1,10 +1,39 @@
 import Link from "next/link";
 import React from "react";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import { Icon } from "@iconify/react";
 
 function Footer() {
   return (
     <div className="absolute bottom-0 flex w-screen h-60 bg-black z-20 ">
       <img src="rambo-keytar.png" alt="" className=" cursor-pointer  ml-2" />
+      <div className="text-white flex flex-col md:flex-row absolute bottom-12 md:bottom-20 right-52 md:right-10 md:space-x-7">
+        <a
+          href="https://www.instagram.com/rambopartyproductions/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InstagramIcon className="text-5xl hover:text-rambo-red transition-all duration-200" />
+        </a>
+        <a
+          href="https://soundcloud.com/rambopartyproductions"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon
+            icon="mdi:soundcloud"
+            className="text-5xl hover:text-rambo-red transition-all duration-200"
+          />
+        </a>
+        <a
+          href="https://www.facebook.com/RamboPartyProductions/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FacebookIcon className="text-5xl hover:text-rambo-red transition-all duration-200" />
+        </a>
+      </div>
       <div className="absolute bottom-10 right-5 md:right-8 flex md:flex-row flex-col text-white text-lg">
         <Link
           href="/about"
@@ -21,10 +50,10 @@ function Footer() {
           <h1>Events</h1>
         </a>
         <Link
-          href="/services"
+          href="/equiptment-rental"
           className="  cursor-pointer  hover:text-rambo-red  transition-all duration-200 border-l-2 pr-2 hover:border-rambo-red pl-2"
         >
-          <h1>Services</h1>
+          <h1>Equiptment Rental</h1>
         </Link>
         <Link
           href="/gallery"
@@ -56,7 +85,7 @@ function Footer() {
           className="text-zinc-500"
         >
           Justin Weisberg
-        </a>{" "}
+        </a>
         in 2023
       </p>
     </div>

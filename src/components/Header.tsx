@@ -56,10 +56,10 @@ function Header({ ramboHeadActivate }: any) {
           <h1>Events</h1>
         </a>
         <Link
-          href="/services"
+          href="/equiptment-rental"
           className="text-zinc-100 text-lg  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
         >
-          <h1>Services</h1>
+          <h1>Equiptment Rental</h1>
         </Link>
         <Link
           href="/gallery"
@@ -107,9 +107,9 @@ function Header({ ramboHeadActivate }: any) {
               Events
             </h1>
           </a>
-          <Link href="/Services">
+          <Link href="/equiptment-rental">
             <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
-              Services
+              Equiptment Rental
             </h1>
           </Link>
           <Link href="/Gallery">
