@@ -85,7 +85,7 @@ function Footer() {
           className="text-zinc-500"
         >
           Justin Weisberg
-        </a>
+        </a>{" "}
         in 2023
       </p>
     </div>

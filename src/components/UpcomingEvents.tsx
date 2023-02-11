@@ -4,7 +4,6 @@ import { PortableText } from "@portabletext/react";
 import { urlFor } from "client";
 
 function UpcomingEvents({ upcomingEvents }: UpcomingEventProps) {
-  console.log(upcomingEvents);
   return (
     <div className=" flex flex-col  z-10 w-screen md:p-20 ">
       <h1 className="text-6xl text-white mb-10 text-center font-extrabold underline decoration-rambo-red ">

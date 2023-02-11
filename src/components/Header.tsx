@@ -40,7 +40,7 @@ function Header({ ramboHeadActivate }: any) {
         </Link>
       </div>
       {/* Desktop Menu */}
-      <div className=" hidden md:flex fixed top-16 w-screen flex-row  max-w-7xl mx-auto left-0 right-0  bg-black bg-filter backdrop-blur-xl bg-opacity-80 z-20 rounded-b-xl p-2">
+      <div className=" hidden md:flex fixed top-16 w-screen flex-row  max-w-7xl mx-auto left-0 right-0  bg-black bg-filter backdrop-blur-xl bg-opacity-80 z-20 rounded-b-xl ">
         <Link
           href="/about"
           className="text-zinc-100 text-lg  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
@@ -61,11 +61,18 @@ function Header({ ramboHeadActivate }: any) {
         >
           <h1>Equiptment Rental</h1>
         </Link>
+
         <Link
           href="/gallery"
           className="text-zinc-100 text-lg  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Gallery</h1>
+        </Link>
+        <Link
+          href="/the-great-bingo-revival"
+          className="text-zinc-100 text-lg  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
+        >
+          <h1>Great Bingo Revival</h1>
         </Link>
         <Link
           href="/contact"
@@ -112,12 +119,17 @@ function Header({ ramboHeadActivate }: any) {
               Equiptment Rental
             </h1>
           </Link>
-          <Link href="/Gallery">
+          <Link href="/the-great-bingo-revival">
+            <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
+              The Great Bingo Revival
+            </h1>
+          </Link>
+          <Link href="/gallery">
             <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
               Gallery
             </h1>
           </Link>
-          <Link href="/Contact">
+          <Link href="/contact">
             <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
               Contact
             </h1>

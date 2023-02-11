@@ -16,7 +16,7 @@ function about() {
             <img src="about-4.webp" alt="" className="w-full" />
           </div>
           <div className="bg-black bg-filter backdrop-blur-xl bg-opacity-70 p-5 lg:rounded-r-xl text-white px-10 lg:w-2/3 ">
-            <h1 className="text-5xl text-rambo-red text-center mb-5 ">
+            <h1 className="text-6xl text-white mb-10 text-center font-extrabold  ">
               About Rambo
               <img src="rambo-party.svg" className=" w-2/3 mx-auto" />
               Productions

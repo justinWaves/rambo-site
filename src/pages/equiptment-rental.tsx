@@ -3,8 +3,6 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import VideoBackground from "@/components/VideoBackground";
 import ImageSlider from "@/components/ImageSlider";
-import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
-import ContactMailIcon from "@mui/icons-material/ContactMail";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import Link from "next/link";
 
@@ -37,7 +35,7 @@ function equiptmentRental() {
       <Header />
       <div className="pb-60 pt-40">
         <div className="mx-auto bg-black bg-filter backdrop-blur-xl bg-opacity-70 p-5 max-w-7xl text-white px-10  relative z-10 rounded-xl ">
-          <h1 className="text-5xl text-rambo-red text-center mb-5 ">
+          <h1 className="text-6xl text-white mb-10 text-center font-extrabold underline decoration-rambo-red ">
             Equiptment Rental
           </h1>
           <h1 className="text-3xl text-center mb-5">
