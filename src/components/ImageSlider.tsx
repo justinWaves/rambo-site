@@ -14,11 +14,11 @@ const ImageSlider = ({ images }: any) => {
   };
 
   return (
-    <div className="relative mb-20 max-w-7xl md:w-4/6 mx-auto ">
+    <div className="relative  mb-20 max-w-7xl md:w-4/6 mx-auto ">
       <img
         src={images[index].src}
         alt={images[index].alt}
-        className="w-full h-full  object-fit mx-auto "
+        className="w-full h-full  object-cover mx-auto "
       />
       <p className="text-center md:text-2xl text-lg text-zinc-400">
         {images[index].caption}
