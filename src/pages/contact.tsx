@@ -16,7 +16,7 @@ interface SendEmailFormInput {
   message: string;
 }
 
-function contact() {
+function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const {
     register,
@@ -121,4 +121,4 @@ function contact() {
   );
 }
 
-export default contact;
+export default Contact;
