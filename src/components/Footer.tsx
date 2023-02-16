@@ -8,7 +8,7 @@ function Footer() {
   return (
     <div className="absolute bottom-0 flex w-screen h-60 bg-black z-20 ">
       <img src="rambo-keytar.png" alt="" className=" cursor-pointer  ml-2" />
-      <div className="text-white flex flex-col md:flex-row absolute bottom-12 md:bottom-20 right-52 md:right-10 md:space-x-7">
+      <div className="text-white flex flex-col lg:flex-row absolute bottom-12 lg:bottom-20 right-52 lg:right-10 lg:space-x-7">
         <a
           href="https://www.instagram.com/rambopartyproductions/"
           target="_blank"
@@ -34,12 +34,18 @@ function Footer() {
           <FacebookIcon className="text-5xl hover:text-rambo-red transition-all duration-200" />
         </a>
       </div>
-      <div className="absolute bottom-10 right-5 md:right-8 flex md:flex-row flex-col text-white text-lg">
+      <div className="absolute bottom-10 right-5 lg:right-8 flex lg:flex-row flex-col text-white text-lg">
         <Link
           href="/about"
           className="  cursor-pointer  hover:text-rambo-red  transition-all duration-200 border-l-2 pr-2 hover:border-rambo-red pl-2"
         >
           <h1>About</h1>
+        </Link>
+        <Link
+          href="/music-releases"
+          className="  cursor-pointer  hover:text-rambo-red  transition-all duration-200 border-l-2 pr-2 hover:border-rambo-red pl-2"
+        >
+          <h1>Music Releases</h1>
         </Link>
         <a
           href="https://www.facebook.com/RamboPartyProductions/events/"
