@@ -30,7 +30,7 @@ function Header({ ramboHeadActivate }: any) {
           </div>
         </Link>
         <Link href="/">
-          <button className="cursor-pointer absolute top-0 right-2 md:right-4  w-10 h-10 ">
+          <button className="cursor-pointer absolute top-0 right-2 md:right-4  w-10 h-10 hidden md:block">
             <img
               src="rambo-head.png"
               className=" w-8 mt-1 md:mt-0 md:w-10 "

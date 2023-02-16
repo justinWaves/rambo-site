@@ -28,11 +28,11 @@ function Contact() {
     <div className="relative min-h-screen">
       <Header />
       <div className="pb-60 pt-20 md:pt-40">
-        <div className="mx-auto bg-black bg-filter backdrop-blur-xl bg-opacity-70 p-5 max-w-7xl text-white px-10  relative z-10 rounded-xl">
+        <div className="mx-auto bg-black bg-filter backdrop-blur-xl bg-opacity-70 p-1 md:p-5 max-w-7xl text-white px-3 md:px-10  relative z-10 rounded-xl">
           <h1 className="text-6xl text-white mb-10 text-center font-extrabold underline decoration-rambo-red ">
             Contact
           </h1>
-          <div className="mt-10 bg-zinc-900 rounded p-8 flex justify-center w-fit mx-auto">
+          <div className="mt-10 bg-zinc-900 rounded p-3 md:p-8 flex justify-center w-fit mx-auto overflow-hidden">
             <div className="">
               <img
                 src="rambo-head.png"
@@ -41,12 +41,12 @@ function Contact() {
               />
               <a href="tel:530-205-FUNK" className="flex mb-5 group ">
                 <div className="">
-                  <LocalPhoneIcon className="text-5xl text-zinc-600 group-hover:text-rambo-red" />
+                  <LocalPhoneIcon className="text-3xl md:text-5xl text-zinc-600 group-hover:text-rambo-red" />
                   <p className="text-xs text-center text-zinc-600 group-hover:text-rambo-red">
                     Phone
                   </p>
                 </div>
-                <div className="ml-5 text-4xl mt-2 text-zinc-400 group-hover:text-rambo-red group-hover:cursor-pointer">
+                <div className="ml-5 text-xl md:text-4xl mt-2 text-zinc-400 group-hover:text-rambo-red group-hover:cursor-pointer">
                   530-205-FUNK
                 </div>
               </a>
@@ -55,13 +55,13 @@ function Contact() {
                 className="flex cursor-pointer group "
               >
                 <div>
-                  <EmailIcon className="text-5xl text-zinc-600 group-hover:text-rambo-red" />
+                  <EmailIcon className=" text-3xl md:text-5xl text-zinc-600 group-hover:text-rambo-red" />
                   <p className="text-xs text-center text-zinc-600 group-hover:text-rambo-red">
                     Email
                   </p>
                 </div>
 
-                <p className="ml-5 text-xl mt-3 text-zinc-400 group-hover:text-rambo-red group-hover:cursor-pointer">
+                <p className="ml-5 text-sm md:text-xl mt-3 text-zinc-400 group-hover:text-rambo-red group-hover:cursor-pointer overflow-scroll">
                   rambopartyproductions@gmail.com
                 </p>
               </a>
