@@ -37,9 +37,9 @@ function theGreatBingoRevival() {
             <p className="max-w-xl  mx-auto">
               The Great Bingo Revival is a rhythm and funk soul explosion
               captivating festivals, corporate events and private parties across
-              the world! ​​​ Reminiscent of a 1970's game show, The Great Bingo
-              Revival harkens back to an era of wide bottom pants, big hair and
-              funky dance moves.
+              the world! ​​​Reminiscent of a 1970&apos;s game show, The Great
+              Bingo Revival harkens back to an era of wide bottom pants, big
+              hair and funky dance moves.
             </p>
             <a
               href="https://www.thegreatbingorevival.com/"

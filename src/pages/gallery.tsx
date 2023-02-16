@@ -23,7 +23,7 @@ const images = [
   },
 ];
 
-function gallery() {
+function Gallery() {
   const [index, setIndex] = useState(0);
 
   const handlePrevClick = () => {
@@ -52,4 +52,4 @@ function gallery() {
   );
 }
 
-export default gallery;
+export default Gallery;

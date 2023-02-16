@@ -46,8 +46,8 @@ function equiptmentRental() {
           <ul className="list-disc w-fit mb-10 mx-auto text-xl">
             <li>Pioneer CDJ-3000 (x3)</li>
             <li>Pioneer DJM-900nxs2 Mixer</li>
-            <li>Yamaha DZR-12" 2000w Powered Loudspeakers (x4)</li>
-            <li>Yamaha DXS-18" 1020w Powered subwoofer (X2)</li>
+            <li>Yamaha DZR-12&quot; 2000w Powered Loudspeakers (x4)</li>
+            <li>Yamaha DXS-18&quot; 1020w Powered subwoofer (X2)</li>
           </ul>
           <h1 className="text-2xl text-center mb-10">
             <Link
