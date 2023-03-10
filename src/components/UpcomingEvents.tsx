@@ -15,11 +15,11 @@ function UpcomingEvents({ upcomingEvents }: UpcomingEventProps) {
             key={event._id}
             className="max-w-7xl w-5/8 mx-auto bg-black bg-filter backdrop-blur-xl bg-opacity-70 mt-10 p-5 rounded-xl "
           >
-            <p className="text-xs text-zinc-500 pl-3">Posted on </p>
+            {/* <p className="text-xs text-zinc-500 pl-3">Posted on </p>
             <span className="text-zinc-300">
               {new Date(event._createdAt).toLocaleString()}
             </span>{" "}
-            by <span className="text-zinc-300">{event.author.name}</span>
+            by <span className="text-zinc-300">{event.author.name}</span> */}
             <h1 className="text-white font-bold text-3xl md:text-5xl  mb-3 p-3">
               {event.title}
             </h1>
