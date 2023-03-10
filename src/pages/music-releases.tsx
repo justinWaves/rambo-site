@@ -34,14 +34,12 @@ function musicReleases({ musicReleases }: ReleasesProps) {
             {musicReleases.map((release: Release) => {
               return (
                 <a
+                  key={release._id}
                   href={release.trackURL}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div
-                    key={release._id}
-                    className="w-screen sm:w-[16rem] mt-10 cursor-pointer mb-5"
-                  >
+                  <div className="w-screen sm:w-[16rem] mt-10 cursor-pointer mb-5">
                     <h1 className="text-white text-center text-xl mb-2 ">
                       {release.caption}
                     </h1>
