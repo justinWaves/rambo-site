@@ -5,7 +5,7 @@ import { urlFor } from "client";
 
 function UpcomingEvents({ upcomingEvents }: UpcomingEventProps) {
   return (
-    <div className=" flex flex-col  z-10 w-screen md:p-20 ">
+    <div className=" flex flex-col  z-10 w-screen md:p-20 max-w-7xl mx-auto ">
       <h1 className="text-6xl text-white mb-10 text-center font-extrabold underline decoration-rambo-red ">
         Upcoming Events
       </h1>

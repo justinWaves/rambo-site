@@ -53,14 +53,12 @@ function Header({ ramboHeadActivate }: any) {
         >
           <h1>Music Releases</h1>
         </Link>
-        <a
-          href="https://www.facebook.com/RamboPartyProductions/events/"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href="/events"
           className="text-zinc-100 text-md  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Events</h1>
-        </a>
+        </Link>
         <Link
           href="/equiptment-rental"
           className="text-zinc-100 text-md  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
@@ -116,15 +114,11 @@ function Header({ ramboHeadActivate }: any) {
               Music Releases
             </h1>
           </Link>
-          <a
-            href="https://www.facebook.com/RamboPartyProductions/events/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href="/events">
             <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
               Events
             </h1>
-          </a>
+          </Link>
           <Link href="/equiptment-rental">
             <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
               Equiptment Rental

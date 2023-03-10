@@ -5,9 +5,7 @@ import Promo from "@/components/Promo";
 import { useState, useEffect } from "react";
 import { client, urlFor } from "client";
 import useSound from "use-sound";
-import { Transition } from "@headlessui/react";
 import { UpcomingEventProps } from "typings";
-import Image from "next/image";
 
 export default function Home({ upcomingEvents }: UpcomingEventProps) {
   const [playAudio] = useSound("party-drop-web.mp3");
@@ -84,7 +82,7 @@ export default function Home({ upcomingEvents }: UpcomingEventProps) {
         </div>
       )}
 
-      <main className="min-h-screen relative">
+      <main className="min-h-screen relative w-screen ">
         <Header ramboHeadActivate={ramboHeadClickHandlerNoAudio} />
         <Promo upcomingEvents={upcomingEvents} />
         {ramboHeadIsActivated ? <></> : <Footer />}
