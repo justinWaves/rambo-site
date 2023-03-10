@@ -60,10 +60,10 @@ function Header({ ramboHeadActivate }: any) {
           <h1>Events</h1>
         </Link>
         <Link
-          href="/equiptment-rental"
+          href="/equipment-rental"
           className="text-zinc-100 text-md  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
         >
-          <h1>Equiptment Rental</h1>
+          <h1>Equipment Rental</h1>
         </Link>
 
         <Link
@@ -119,9 +119,9 @@ function Header({ ramboHeadActivate }: any) {
               Events
             </h1>
           </Link>
-          <Link href="/equiptment-rental">
+          <Link href="/equipment-rental">
             <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
-              Equiptment Rental
+              Equipment Rental
             </h1>
           </Link>
           <Link href="/the-great-bingo-revival">

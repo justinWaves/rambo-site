@@ -7,7 +7,7 @@ import { client, urlFor } from "client";
 import useSound from "use-sound";
 import { UpcomingEventProps } from "typings";
 
-export default function Home({ upcomingEvents }: UpcomingEventProps) {
+export default function Home({ promoPage }: any) {
   const [playAudio] = useSound("party-drop-web.mp3");
   const [ramboHeadIsActivated, setRamboHeadIsActivated] = useState(false);
   const [isPartyExplosionActivated, setIsPartyExplosionActivated] =
@@ -84,7 +84,7 @@ export default function Home({ upcomingEvents }: UpcomingEventProps) {
 
       <main className="min-h-screen relative w-screen ">
         <Header ramboHeadActivate={ramboHeadClickHandlerNoAudio} />
-        <Promo upcomingEvents={upcomingEvents} />
+        <Promo promoPage={promoPage} />
         {ramboHeadIsActivated ? <></> : <Footer />}
       </main>
     </>
@@ -92,26 +92,17 @@ export default function Home({ upcomingEvents }: UpcomingEventProps) {
 }
 
 export const getServerSideProps = async () => {
-  const query = `*[_type == "upcomingEvents"]{
-    _id,
-    _createdAt,
-    title,
-    author -> {
-    name,
-    image
-  },
-      url,
-      eventDate,
-  image,
-  body,
-  slug
+  const query = `*[_type == "promoPage"]{
+
+  caption,
+  promoImage
   }`;
 
-  const upcomingEvents = await client.fetch(query);
+  const promoPage = await client.fetch(query);
 
   return {
     props: {
-      upcomingEvents,
+      promoPage,
     },
   };
 };

@@ -56,10 +56,10 @@ function Footer() {
           <h1>Events</h1>
         </a>
         <Link
-          href="/equiptment-rental"
+          href="/equipment-rental"
           className="  cursor-pointer  hover:text-rambo-red  transition-all duration-200 border-l-2 pr-2 hover:border-rambo-red pl-2"
         >
-          <h1>Equiptment Rental</h1>
+          <h1>Equipment Rental</h1>
         </Link>
         <Link
           href="/gallery"

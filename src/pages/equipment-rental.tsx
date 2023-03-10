@@ -29,14 +29,14 @@ const images = [
   },
 ];
 
-function equiptmentRental() {
+function equipmentRental() {
   return (
     <div className="relative min-h-screen">
       <Header />
       <div className="pb-60 pt-20 md:pt-36">
         <div className="mx-auto bg-black bg-filter backdrop-blur-xl bg-opacity-70 p-5 max-w-7xl text-white px-10  relative z-10 rounded-xl ">
           <h1 className="text-6xl text-white mb-10 text-center font-extrabold underline decoration-rambo-red ">
-            Equiptment Rental
+            Equipment Rental
           </h1>
           <h1 className="text-3xl text-center mb-5">
             Need sound and DJ gear for your next event? We rent out following
@@ -69,4 +69,4 @@ function equiptmentRental() {
   );
 }
 
-export default equiptmentRental;
+export default equipmentRental;
