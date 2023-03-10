@@ -8,7 +8,7 @@ function about() {
     <div className="relative min-h-screen">
       <Header />
       <div className="pb-60">
-        <div className="relative pt-20 md:pt-40 pb-10 max-w-7xl  mx-auto z-10 flex lg:flex-row flex-col ">
+        <div className="relative pt-20 md:pt-36 pb-10 max-w-7xl  mx-auto z-10 flex lg:flex-row flex-col ">
           <div className="lg:w-1/3 lg:rounded-l-xl overflow-hidden flex lg:flex-col flex-row w-screen overflow-x-scroll justify-around">
             <img src="about-1.webp" alt="" className="w-full" />
             <img src="about-2.webp" alt="" className="w-full" />

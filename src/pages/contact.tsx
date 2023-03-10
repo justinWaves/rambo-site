@@ -27,7 +27,7 @@ function Contact() {
   return (
     <div className="relative min-h-screen">
       <Header />
-      <div className="pb-60 pt-20 md:pt-40">
+      <div className="pb-60 pt-20 md:pt-36">
         <div className="mx-auto bg-black bg-filter backdrop-blur-xl bg-opacity-70 p-1 md:p-5 max-w-7xl text-white px-3 md:px-10  relative z-10 rounded-xl">
           <h1 className="text-6xl text-white mb-10 text-center font-extrabold underline decoration-rambo-red ">
             Contact
