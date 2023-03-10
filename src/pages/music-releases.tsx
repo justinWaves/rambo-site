@@ -22,7 +22,7 @@ interface ReleasesProps {
 function musicReleases({ musicReleases }: ReleasesProps) {
   console.log(musicReleases);
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative min-h-screen overflow-hidden body-font font-mono">
       <Header />
       <div className="pb-60 pt-20 md:pt-36">
         <div className="mx-auto bg-black bg-filter backdrop-blur-xl bg-opacity-70 md:p-5 max-w-7xl text-white md:px-10  relative z-10 rounded-xl">

@@ -5,7 +5,10 @@ module.exports = {
     extend: {
       colors: {
         'rambo-red': '#EE1210'
-      }
+      },
+      fontFamily: {
+        'rajdhani': ['Rajdhani', 'sans-serif']
+      },
     },
   },
   plugins: [],

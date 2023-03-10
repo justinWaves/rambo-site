@@ -34,7 +34,7 @@ function Gallery() {
     setIndex(index === images.length - 1 ? 0 : index + 1);
   };
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen body-font font-mono">
       <Header />
       <div className="pb-60 pt-20 md:pt-36">
         <div className="mx-auto bg-black bg-filter backdrop-blur-xl bg-opacity-70 p-5 max-w-7xl text-white px-10  relative z-10 rounded-xl">

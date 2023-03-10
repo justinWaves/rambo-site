@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 
 function Footer() {
   return (
-    <div className="absolute bottom-0 flex w-screen h-60 bg-black z-20 ">
+    <div className="absolute bottom-0 flex w-screen h-60 bg-black z-20 overflow-hidden">
       <img
         src="rambo-keytar.png"
         alt=""
@@ -38,7 +38,7 @@ function Footer() {
           <FacebookIcon className="text-5xl hover:text-rambo-red transition-all duration-200" />
         </a>
       </div>
-      <div className="absolute bottom-10 right-5 lg:right-8 flex lg:flex-row flex-col text-white text-lg">
+      <div className="absolute bottom-12 right-5 lg:right-8 flex lg:flex-row flex-col text-white text-sm">
         <Link
           href="/about"
           className="  cursor-pointer  hover:text-rambo-red  transition-all duration-200 border-l-2 pr-2 hover:border-rambo-red pl-2"

@@ -9,7 +9,7 @@ import { UpcomingEventProps } from "typings";
 
 function Events({ upcomingEvents }: UpcomingEventProps) {
   return (
-    <div className="relative min-h-screen   mx-auto overflow-hidden ">
+    <div className="relative min-h-screen mx-auto overflow-hidden body-font font-mono ">
       <Header />
       <div className="pb-60 pt-20 md:pt-36 ">
         <div className="mx-auto bg-black bg-filter backdrop-blur-xl bg-opacity-70  max-w-7xl text-white md:px-10  relative z-10 rounded-xl pt-10 ">

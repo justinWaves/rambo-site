@@ -5,7 +5,7 @@ import React from "react";
 
 function about() {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen body-font font-mono">
       <Header />
       <div className="pb-60">
         <div className="relative pt-20 md:pt-36 pb-10 max-w-7xl  mx-auto z-10 flex lg:flex-row flex-col ">
@@ -16,7 +16,7 @@ function about() {
             <img src="about-4.webp" alt="" className="w-full" />
           </div>
           <div className="bg-black bg-filter backdrop-blur-xl bg-opacity-70 p-5 lg:rounded-r-xl text-white px-10 lg:w-2/3 ">
-            <h1 className="text-6xl text-white mb-10 text-center font-extrabold  ">
+            <h1 className="text-5xl text-white mb-10 text-center font-extrabold  ">
               About Rambo
               <img src="rambo-party.svg" className=" w-2/3 mx-auto" />
               Productions

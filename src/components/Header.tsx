@@ -14,7 +14,7 @@ function Header({ ramboHeadActivate }: any) {
     <>
       <div
         className="flex justify-center h-16 fixed
-    p-3  mx-auto max-w-7xl  bg-black w-screen left-0 right-0 bg-filter backdrop-blur-xl bg-opacity-80 z-20 "
+    p-3  mx-auto  max-w-7xl  bg-black w-screen left-0 right-0 bg-filter backdrop-blur-xl bg-opacity-50 z-20 "
       >
         <button
           className="cursor-pointer absolute left-2 md:left-4  w-10 h-10 "
@@ -40,7 +40,7 @@ function Header({ ramboHeadActivate }: any) {
         </Link>
       </div>
       {/* Desktop Menu */}
-      <div className=" hidden md:flex fixed top-16 w-screen flex-row  max-w-7xl mx-auto left-0 right-0  bg-black bg-filter backdrop-blur-xl bg-opacity-80 z-20 rounded-b-xl ">
+      <div className=" hidden md:flex fixed top-16 w-screen flex-row  max-w-7xl mx-auto left-0 right-0  bg-black bg-filter backdrop-blur-xl bg-opacity-50 z-20 rounded-b-xl ">
         <Link
           href="/about"
           className="text-white text-md  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
@@ -103,7 +103,7 @@ function Header({ ramboHeadActivate }: any) {
         leaveFrom="opacity-100"
         leaveTo="opacity-0"
       >
-        <div className="fixed top-16 w-screen flex flex-col md:hidden   bg-black bg-filter backdrop-blur-xl bg-opacity-80 z-20 p-5 rounded-b-lg">
+        <div className="fixed top-16 w-screen flex flex-col md:hidden   bg-black bg-filter backdrop-blur-xl bg-opacity-50 z-20 p-5 rounded-b-lg">
           <Link href="/about">
             <h1 className="text-zinc-100 text-lg mt-3 mb-3 cursor-pointer w-full hover:bg-rambo-red p-2 rounded-xl pl-5">
               About
