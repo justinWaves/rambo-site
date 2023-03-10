@@ -43,44 +43,44 @@ function Header({ ramboHeadActivate }: any) {
       <div className=" hidden md:flex fixed top-16 w-screen flex-row  max-w-7xl mx-auto left-0 right-0  bg-black bg-filter backdrop-blur-xl bg-opacity-80 z-20 rounded-b-xl ">
         <Link
           href="/about"
-          className="text-zinc-100 text-md  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
+          className="text-white text-md  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>About</h1>
         </Link>
         <Link
           href="/music-releases"
-          className="text-zinc-100 text-md  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
+          className="text-white text-md  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Music Releases</h1>
         </Link>
         <Link
           href="/events"
-          className="text-zinc-100 text-md  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
+          className="text-white text-md  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Events</h1>
         </Link>
         <Link
           href="/equipment-rental"
-          className="text-zinc-100 text-md  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
+          className="text-white text-md  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Equipment Rental</h1>
         </Link>
 
         <Link
           href="/gallery"
-          className="text-zinc-100 text-md  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
+          className="text-white text-md  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Gallery</h1>
         </Link>
         <Link
           href="/the-great-bingo-revival"
-          className="text-zinc-100 text-md  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
+          className="text-white text-md  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Great Bingo Revival</h1>
         </Link>
         <Link
           href="/contact"
-          className="text-zinc-100 text-md  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
+          className="text-white text-md  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Contact</h1>
         </Link>
@@ -88,7 +88,7 @@ function Header({ ramboHeadActivate }: any) {
           href="https://www.rambopartyproductions.com/shop"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-zinc-100 text-sm  mb-1 cursor-pointer w-full hover:bg-rambo-red p-1 rounded-xl text-center transition-all duration-200"
+          className="text-white text-sm  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Shop</h1>
         </a>

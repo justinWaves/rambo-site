@@ -26,10 +26,11 @@ function musicReleases({ musicReleases }: ReleasesProps) {
       <Header />
       <div className="pb-60 pt-20 md:pt-36">
         <div className="mx-auto bg-black bg-filter backdrop-blur-xl bg-opacity-70 md:p-5 max-w-7xl text-white md:px-10  relative z-10 rounded-xl">
-          <h1 className="text-6xl text-white mb-10 text-center font-extrabold underline decoration-rambo-red ">
+          <h1 className="text-6xl text-white mb-10 pt-10 text-center font-extrabold underline decoration-rambo-red ">
             Music Releases
           </h1>
-          <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 ">
+
+          <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center ">
             {musicReleases.map((release: Release) => {
               return (
                 <a
@@ -39,7 +40,7 @@ function musicReleases({ musicReleases }: ReleasesProps) {
                 >
                   <div
                     key={release._id}
-                    className="w-screen md:w-[16rem] mt-10 cursor-pointer mb-5"
+                    className="w-screen sm:w-[16rem] mt-10 cursor-pointer mb-5"
                   >
                     <h1 className="text-white text-center text-xl mb-2 ">
                       {release.caption}

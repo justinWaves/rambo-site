@@ -7,7 +7,11 @@ import { Icon } from "@iconify/react";
 function Footer() {
   return (
     <div className="absolute bottom-0 flex w-screen h-60 bg-black z-20 ">
-      <img src="rambo-keytar.png" alt="" className=" cursor-pointer  ml-2" />
+      <img
+        src="rambo-keytar.png"
+        alt=""
+        className=" cursor-pointer  relative left-5  w-1/3 h-fit "
+      />
       <div className="text-white flex flex-col lg:flex-row absolute bottom-12 lg:bottom-20 right-52 lg:right-10 lg:space-x-7">
         <a
           href="https://www.instagram.com/rambopartyproductions/"
