@@ -6,12 +6,21 @@ import UpcomingEvents from "./UpcomingEvents";
 import VideoBackground from "./VideoBackground";
 import { PropsForFeatures } from "@headlessui/react/dist/utils/render";
 
-// interface Props {
-//   upcomingEvents: UpcomingEventProps;
-//   promoPost: any;
-// }
+interface PromoPost {
+  _id: string;
+  promoImage: {
+    asset: {
+      url: string;
+    };
+  };
+  caption: string;
+}
 
-function Promo({ promoPage }: any) {
+interface PromoProps {
+  promoPage: [PromoPost];
+}
+
+function Promo({ promoPage }: PromoProps) {
   console.log(promoPage);
   return (
     <div className="relative w-screen  pb-60 flex flex-col overflow-x-hidden z-0">
@@ -19,7 +28,10 @@ function Promo({ promoPage }: any) {
       <div className="h-screen mt-36 ">
         {promoPage.map((promoPost: any) => {
           return (
-            <div className="w-screen md:w-1/2 absolute mx-auto left-0 right-0 mt-10">
+            <div
+              key={promoPost._id}
+              className="w-screen md:w-1/2 absolute mx-auto left-0 right-0 mt-8"
+            >
               <h1 className="text-white text-center text-3xl mb-5">
                 {promoPost.caption}
               </h1>
