@@ -29,7 +29,7 @@ function Contact() {
       <Header />
       <div className="pb-60 pt-20 md:pt-36">
         <div className="mx-auto bg-black bg-filter backdrop-blur-xl bg-opacity-70 p-1 md:p-5 max-w-7xl text-white px-3 md:px-10  relative z-10 rounded-xl">
-          <h1 className="text-6xl text-white mb-10 text-center font-extrabold underline decoration-rambo-red ">
+          <h1 className="text-3xl text-white mb-10 text-center font-extrabold underline decoration-rambo-red ">
             Contact
           </h1>
           <div className="mt-10 bg-zinc-900 rounded p-3 md:p-8 flex justify-center w-fit mx-auto overflow-hidden">

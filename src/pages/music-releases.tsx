@@ -26,7 +26,7 @@ function musicReleases({ musicReleases }: ReleasesProps) {
       <Header />
       <div className="pb-60 pt-20 md:pt-36">
         <div className="mx-auto bg-black bg-filter backdrop-blur-xl bg-opacity-70 md:p-5 max-w-7xl text-white md:px-10  relative z-10 rounded-xl">
-          <h1 className="text-6xl text-white mb-10 pt-10 text-center font-extrabold underline decoration-rambo-red ">
+          <h1 className="text-3xl text-white mb-10 pt-10 text-center font-extrabold underline decoration-rambo-red ">
             Music Releases
           </h1>
 

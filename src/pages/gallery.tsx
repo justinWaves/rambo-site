@@ -38,7 +38,7 @@ function Gallery() {
       <Header />
       <div className="pb-60 pt-20 md:pt-36">
         <div className="mx-auto bg-black bg-filter backdrop-blur-xl bg-opacity-70 p-5 max-w-7xl text-white px-10  relative z-10 rounded-xl">
-          <h1 className="text-6xl text-white mb-10  text-center font-extrabold underline decoration-rambo-red ">
+          <h1 className="text-3xl text-white mb-10  text-center font-extrabold underline decoration-rambo-red ">
             Gallery
           </h1>
           <div className="flex  justify-center h-screen">
