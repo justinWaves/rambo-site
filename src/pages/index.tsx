@@ -95,6 +95,7 @@ export const getServerSideProps = async () => {
   const query = `*[_type == "promoPage"]{
 
   caption,
+  promoURL,
   promoImage
   }`;
 

@@ -1,19 +1,38 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Transition } from "@headlessui/react";
 import Link from "next/link";
 
 function Header({ ramboHeadActivate }: any) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [show, handleShow] = useState(true);
 
   const openMobileMenu = () => {
     setIsMobileMenuOpen((isMobileMenuOpen) => !isMobileMenuOpen);
   };
 
+  const transitionHeader = () => {
+    if (window.scrollY < 10000) {
+      handleShow(true);
+    } else {
+      handleShow(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", transitionHeader);
+    return () => window.removeEventListener("scroll", transitionHeader);
+  }, []);
+
+  if (show) {
+    setTimeout(() => {
+      handleShow(false);
+    }, 4000);
+  }
+
   return (
     <>
       <div
-        className="flex justify-center h-16 fixed
+        className="flex justify-center h-20 fixed
     p-3  mx-auto  max-w-7xl  bg-black w-screen left-0 right-0 bg-filter backdrop-blur-xl bg-opacity-50 z-20 "
       >
         <button
@@ -22,13 +41,20 @@ function Header({ ramboHeadActivate }: any) {
         >
           <MenuIcon className="  text-4xl text-zinc-100 md:hidden" />
         </button>
-        <Link href="/" className="cursor-pointer">
-          <div className="flex flex-row  justify-center  ">
-            <h1 className="text-md md:text-lg mr-1 mt-2 text-white">Rambo</h1>
-            <img src="rambo-party.svg" className="w-1/3 " />
-            <h1 className="text-md md:text-lg  mt-2 text-white">Productions</h1>
-          </div>
-        </Link>
+        <div>
+          <Link href="/" className="cursor-pointer">
+            <div className="flex flex-row  justify-center  ">
+              <h1 className="text-md md:text-lg mr-1 mt-2 text-white">Rambo</h1>
+              <img src="rambo-party.svg" className="w-1/3 " />
+              <h1 className="text-md md:text-lg  mt-2 text-white">
+                Productions
+              </h1>
+            </div>
+          </Link>
+          <h1 className="text-rambo-red text-2xl text-center relative right-8">
+            パーティ
+          </h1>
+        </div>
         <Link href="/">
           <button className="cursor-pointer absolute top-0 right-2 md:right-4  w-10 h-10 hidden md:block">
             <img
@@ -40,47 +66,51 @@ function Header({ ramboHeadActivate }: any) {
         </Link>
       </div>
       {/* Desktop Menu */}
-      <div className=" hidden md:flex fixed top-16 w-screen flex-row  max-w-7xl mx-auto left-0 right-0  bg-black bg-filter backdrop-blur-xl bg-opacity-50 z-20 rounded-b-xl ">
+      <div
+        className={` ${
+          show && "md:flex bg-black bg-filter backdrop-blur-xl bg-opacity-50"
+        } hover:md:flex hidden fixed top-20 w-screen flex-row  max-w-7xl mx-auto left-0 right-0   z-20 rounded-b-xl transition ease-in-out duration-1000`}
+      >
         <Link
           href="/about"
-          className="text-white text-md  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
+          className="text-white text-sm  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>About</h1>
         </Link>
         <Link
           href="/music-releases"
-          className="text-white text-md  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
+          className="text-white text-sm  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Music Releases</h1>
         </Link>
         <Link
           href="/events"
-          className="text-white text-md  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
+          className="text-white text-sm  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Events</h1>
         </Link>
         <Link
           href="/equipment-rental"
-          className="text-white text-md  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
+          className="text-white text-sm  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Equipment Rental</h1>
         </Link>
 
         <Link
           href="/gallery"
-          className="text-white text-md  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
+          className="text-white text-sm  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Gallery</h1>
         </Link>
         <Link
           href="/the-great-bingo-revival"
-          className="text-white text-md  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
+          className="text-white text-sm  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Great Bingo Revival</h1>
         </Link>
         <Link
           href="/contact"
-          className="text-white text-md  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
+          className="text-white text-sm  mb-1 cursor-pointer w-full hover:bg-zinc-800 p-1 rounded-xl text-center transition-all duration-200"
         >
           <h1>Contact</h1>
         </Link>

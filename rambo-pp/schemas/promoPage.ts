@@ -10,6 +10,11 @@ export default defineType({
       title: 'Caption',
       type: 'string',
     }),
+    defineField({
+      name: 'promoURL',
+      title: 'URL for Promo item link',
+      type: 'string',
+    }),
 
 
     defineField({

@@ -23,24 +23,34 @@ interface PromoProps {
 function Promo({ promoPage }: PromoProps) {
   console.log(promoPage);
   return (
-    <div className="relative w-screen  pb-60 flex flex-col overflow-x-hidden z-0">
+    <div className="relative w-screen  pb-60   overflow-x-hidden z-0 ">
       <VideoBackground />
-      <div className="h-screen mt-36 ">
+      <div className="h-screen  md:mt-36 grid place-items-center ">
         {promoPage.map((promoPost: any) => {
           return (
-            <div
+            <a
+              href={promoPost.promoURL}
+              target="_blank"
+              rel="noopener noreferrer"
               key={promoPost._id}
-              className="w-screen md:w-1/2 absolute mx-auto left-0 right-0 mt-8"
+              className=" absolute mx-auto left-0 right-0 md:pb-64"
             >
-              <h1 className="text-white text-center text-3xl mb-5">
-                {promoPost.caption}
-              </h1>
+              <div className="flex-row cursor-pointer">
+                <img
+                  src="rambo-head-69.png"
+                  alt=""
+                  className=" w-40 md:block hidden mb-1 mx-auto"
+                />
+                <h1 className="text-white text-center text-3xl md:text-2xl mt-2 mb-5 px-3 md:px-5 max-w-3xl mx-auto">
+                  {promoPost.caption}
+                </h1>
+              </div>
               <img
                 src={urlFor(promoPost.promoImage).url()!}
                 alt=""
-                className=""
+                className="w-5/6 md:w-1/3 xl:w-1/4 mx-auto shadow-white shadow-2xl hover:scale-110 transition-all duration-300 cursor-pointer "
               />
-            </div>
+            </a>
           );
         })}
       </div>
