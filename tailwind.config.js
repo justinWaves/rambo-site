@@ -7,7 +7,7 @@ module.exports = {
         'rambo-red': '#EE1210'
       },
       fontFamily: {
-        'rajdhani': ['Rajdhani', 'sans-serif']
+        orbitron: ['Orbitron', 'Sans'],
       },
     },
   },

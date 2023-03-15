@@ -12,7 +12,7 @@ function Header({ ramboHeadActivate }: any) {
   };
 
   const transitionHeader = () => {
-    if (window.scrollY < 10000) {
+    if (window.scrollY < 200) {
       handleShow(true);
     } else {
       handleShow(false);
@@ -23,11 +23,11 @@ function Header({ ramboHeadActivate }: any) {
     return () => window.removeEventListener("scroll", transitionHeader);
   }, []);
 
-  if (show) {
-    setTimeout(() => {
-      handleShow(false);
-    }, 4000);
-  }
+  // if (show) {
+  //   setTimeout(() => {
+  //     handleShow(false);
+  //   }, 4000);
+  // }
 
   return (
     <>

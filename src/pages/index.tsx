@@ -48,7 +48,7 @@ export default function Home({ promoPage }: any) {
 
       {ramboHeadIsActivated ? (
         <div
-          className={`bg-black w-screen h-screen fixed z-50 flex justify-center text-center body-font font-mono`}
+          className={`bg-black w-screen h-screen fixed z-50 flex justify-center text-center body-font font-orbitron`}
         >
           <div className="my-auto cursor-pointer">
             <h1 className="text-white text-3xl animate-bounce mb-5">
@@ -82,7 +82,7 @@ export default function Home({ promoPage }: any) {
         </div>
       )}
 
-      <main className="min-h-screen relative w-screen body-font font-mono">
+      <main className="min-h-screen relative w-screen body-font font-orbitron">
         <Header ramboHeadActivate={ramboHeadClickHandlerNoAudio} />
         <Promo promoPage={promoPage} />
         {ramboHeadIsActivated ? <></> : <Footer />}

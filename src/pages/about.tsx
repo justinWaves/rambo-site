@@ -5,7 +5,7 @@ import React from "react";
 
 function about() {
   return (
-    <div className="relative min-h-screen body-font font-mono">
+    <div className="relative min-h-screen  body-font font-orbitron">
       <Header />
       <div className="pb-60">
         <div className="relative pt-20 md:pt-36 pb-10 max-w-7xl  mx-auto z-10 flex lg:flex-row flex-col ">
