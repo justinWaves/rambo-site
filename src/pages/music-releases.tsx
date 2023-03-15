@@ -38,15 +38,16 @@ function musicReleases({ musicReleases }: ReleasesProps) {
                   href={release.trackURL}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="cursor-pointer"
                 >
-                  <div className="w-screen sm:w-[16rem] mt-10 cursor-pointer mb-5">
+                  <div className="w-screen sm:w-[16rem] mt-10  mb-5">
                     <h1 className="text-white text-center text-xl mb-2 ">
                       {release.caption}
                     </h1>
                     <img
                       src={urlFor(release.trackImage).url()!}
                       alt=""
-                      className="w-screen"
+                      className="w-screen hover:scale-105 transition-all duration-300"
                     />
                   </div>
                 </a>
