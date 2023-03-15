@@ -35,7 +35,7 @@ function Contact() {
           <div className="mt-10 bg-zinc-900 rounded p-3 md:p-8 flex justify-center w-fit mx-auto overflow-hidden">
             <div className="">
               <img
-                src="rambo-head.png"
+                src="rambo-internet.jpg"
                 alt="rambo-keytar"
                 className="w-1/2 mx-auto mb-5 "
               />
@@ -68,7 +68,7 @@ function Contact() {
             </div>
           </div>
 
-          <h1 className="text-3xl text-rambo-red text-center mb-5 mt-10 ">
+          <h1 className="text-xl text-rambo-red text-center mb-5 mt-10 ">
             ...or use form below for maXimum luXury.
           </h1>
 
