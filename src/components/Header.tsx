@@ -36,10 +36,10 @@ function Header({ ramboHeadActivate }: any) {
     p-3  mx-auto  max-w-7xl  bg-black w-screen left-0 right-0 bg-filter backdrop-blur-xl bg-opacity-50 z-20 "
       >
         <button
-          className="cursor-pointer absolute left-2 md:left-4  w-10 h-10 "
+          className="cursor-pointer absolute left-2 md:left-4  w-10 h-10 block md:hidden "
           onClick={openMobileMenu}
         >
-          <MenuIcon className="  text-4xl text-zinc-100 block md:hidden" />
+          <MenuIcon className="  text-4xl text-zinc-100 " />
         </button>
         <div>
           <Link href="/" className="cursor-pointer">
